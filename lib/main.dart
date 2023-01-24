@@ -4,6 +4,7 @@ import 'package:shopee/screens/products_overview_screen.dart';
 main() {
   runApp(MyApp());
 }
+//hvjhvj
 
 class MyApp extends StatelessWidget {
   const MyApp({super.key});
@@ -11,6 +12,11 @@ class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
+      title: 'Shopee',
+      theme: ThemeData(
+          colorScheme: ColorScheme.fromSwatch(primarySwatch: Colors.purple)
+              .copyWith(secondary: Colors.deepOrange),
+          fontFamily: 'Lato'),
       home: ProductsOverview(),
     );
   }
